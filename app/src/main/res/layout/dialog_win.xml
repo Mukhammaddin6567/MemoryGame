@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageDialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bg7"
+        app:layout_constraintBottom_toBottomOf="@id/imageDialog"
+        app:layout_constraintEnd_toEndOf="@id/imageDialog"
+        app:layout_constraintStart_toStartOf="@id/imageDialog"
+        app:layout_constraintTop_toTopOf="@id/imageDialog"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageStar"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/stars"
+        app:layout_constraintBottom_toBottomOf="@id/imageDialog"
+        app:layout_constraintEnd_toEndOf="@id/imageDialog"
+        app:layout_constraintStart_toStartOf="@id/imageDialog"
+        app:layout_constraintTop_toTopOf="@id/imageDialog"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kite_one"
+        android:shadowColor="#80000000"
+        android:shadowDx="1.6"
+        android:shadowDy="1.6"
+        android:shadowRadius="8"
+        android:text="CONGRATULATIONS\nYOU WIN"
+        android:textAlignment="center"
+        android:textColor="#0D8C11"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imageDialog"
+        app:layout_constraintEnd_toEndOf="@id/imageDialog"
+        app:layout_constraintStart_toStartOf="@id/imageDialog"
+        app:layout_constraintTop_toTopOf="@id/imageDialog"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonMenu"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/imageDialog"
+        app:layout_constraintEnd_toStartOf="@id/buttonRestart"
+        app:layout_constraintStart_toStartOf="@id/imageDialog"
+        app:layout_constraintTop_toBottomOf="@id/textDialog"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonRestart"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_restart"
+        app:layout_constraintEnd_toEndOf="@id/imageDialog"
+        app:layout_constraintStart_toEndOf="@id/buttonMenu"
+        app:layout_constraintTop_toTopOf="@id/buttonMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

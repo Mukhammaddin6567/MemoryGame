@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WinDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/WinDialogAnimation</item>
+    </style>
+
+    <style name="TimeOverDialog" parent="WinDialog"/>
+
+    <style name="WinDialogAnimation">
+        <!--<item name="android:windowEnterAnimation">@anim/anim_slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_in_down</item>-->
+    </style>
+
+</resources>

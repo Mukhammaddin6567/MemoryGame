@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/textDialog"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@drawable/menu_frame"
+        android:fontFamily="@font/kite_one"
+        android:gravity="center"
+        android:shadowColor="#80000000"
+        android:shadowDx="1.6"
+        android:shadowDy="1.6"
+        android:shadowRadius="8"
+        android:text="GAME OVER"
+        android:textAlignment="center"
+        android:textColor="#126F16"
+        android:paddingTop="24dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/monkey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textDialog" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonMenu"
+        app:layout_constraintEnd_toStartOf="@id/buttonRestart"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="@id/textDialog"
+        app:layout_constraintStart_toStartOf="@id/textDialog"
+        app:layout_constraintTop_toBottomOf="@id/textDialog" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonRestart"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_restart"
+        app:layout_constraintEnd_toEndOf="@id/textDialog"
+        app:layout_constraintStart_toEndOf="@id/buttonMenu"
+        app:layout_constraintTop_toTopOf="@id/buttonMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

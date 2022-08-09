@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="text_time">Time</string>
+    <string name="text_tries">Tries</string>
+    <string name="text_tries_count">%1d</string>
+    <string name="text_restart_game">Restart game?</string>
+    <string name="text_restart_button">Restart</string>
+    <string name="text_leave_game">Leave game?</string>
+    <string name="text_leave_button">Leave</string>
+    <string name="text_back_pressed">Press back again to leave</string>
+</resources>
